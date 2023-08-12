@@ -105,7 +105,7 @@ function App() {
         </div>
       )}
       <ul>
-        {posts.map(post => (
+        {posts && posts.map(post => (
           <li key={post.id}>
             <div className="post-card">
               {editingPostId === post.id ? (
